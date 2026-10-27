@@ -1,0 +1,17 @@
+{
+  "name": "libralink",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Libra Link – school textbook issuance, collection and stock management",
+  "type": "module",
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "build": "node frontend/build.mjs",
+    "start": "node --no-warnings backend/server.mjs",
+    "dev": "node --no-warnings backend/server.mjs",
+    "test": "node --no-warnings scripts/test-api.mjs",
+    "setup": "npm install && npm run build"
+  },
+  "dependencies": { "react": "^19.0.0", "react-dom": "^19.0.0" },
+  "devDependencies": { "esbuild": "^0.25.0" }
+}
